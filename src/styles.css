@@ -2,12 +2,35 @@ body {
   padding-bottom: 50px;
 }
 
+ .home-background {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3) ), 
+    url(assets/img/comic.webp) center no-repeat;
+     background-size: cover;
+} 
+
 .main-container {
     margin-top: 20px;
 }
 
-.img-logo {
+.logo img {
   width: 120px;
+}
+
+.jumbotron {
+  background-color: #436c94 !important; 
+  padding: 1rem !important; 
+  height: 110px;
+}
+
+.description {
+  padding-top: 30px;
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem;
 }
 
 .animated {
@@ -36,4 +59,43 @@ body {
   
   .fadeIn {
     animation-name: fadeIn;
+  }
+
+
+  @media (max-width: 767px) {
+    .title {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+
+    .title-home {
+      font-size: 1.5rem ;
+    }
+
+    .hero-target {
+      padding: 0px 10px;
+      margin: 10px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .jumbotron {
+      height: 80px;
+    }
+
+    .lead {
+      font-size: 0.9rem !important;
+    }
   }
